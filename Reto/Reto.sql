@@ -17,4 +17,12 @@ EXEC dbo.uspGetBillOfMaterials
 4. La prueba (Act) debe ser ejecutada con mis mismos argumentos del ejemplo de arriba.
 5. La prueba se considera aprobada si los datos esperados son iguales a los datos obtenidos (Pista: usar tSQLt.AssertEqualsTable)
 6. La prueba debe aprobar al momento de ejecutar la sentencia tSQLt.RunAll
+
+
+NOTA: La tabla Production.Product está referenciada con SCHEMABINDING en unas vistas, por el momento eliminaremos las vistas usando
+las siguientes sentencias
+
+DROP VIEW Production.vProductAndDescription
+DROP VIEW Production.vProductModelCatalogDescription
+DROP VIEW Production.vProductModelInstructions
 */
