@@ -1,7 +1,7 @@
 USE AdventureWorks2019
 GO
 
-CREATE PROCEDURE Person.uspInsertPersonEmailAddress
+CREATE PROCEDURE dbo.uspInsertPersonEmailAddress
 	@BusinessEntityID INT,
 	@EmailAddress VARCHAR(50),
 	@EmailAddressID INT OUTPUT
