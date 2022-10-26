@@ -1,7 +1,7 @@
 USE AdventureWorks2019
 GO
 
-CREATE PROCEDURE Person.uspDeleteEmailAddress
+CREATE PROCEDURE dbo.uspDeleteEmailAddress
 	@EmailAddressID INT
 AS
 BEGIN

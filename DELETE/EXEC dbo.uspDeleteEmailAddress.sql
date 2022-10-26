@@ -9,7 +9,7 @@ DECLARE @EmailAddressID INT = 0
 SELECT * FROM Person.EmailAddress WHERE EmailAddressID = @EmailAddressID
 
 --Ejecutar el SP
-EXEC Person.uspDeleteEmailAddress @EmailAddressID = @EmailAddressID
+EXEC dbo.uspDeleteEmailAddress @EmailAddressID = @EmailAddressID
 
 --Comprobar que el registro ya no existe
 SELECT * FROM Person.EmailAddress WHERE EmailAddressID = @EmailAddressID
