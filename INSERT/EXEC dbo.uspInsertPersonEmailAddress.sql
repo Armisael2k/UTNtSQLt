@@ -6,7 +6,7 @@ DECLARE @EmailAddressID INT = 0,
 		@BusinessEntityID INT = 0,
 		@EmailAddress VARCHAR(50) = ''
 
-EXEC Person.uspInsertPersonEmailAddress 
+EXEC dbo.uspInsertPersonEmailAddress 
 		@BusinessEntityID = @BusinessEntityID, 
 		@EmailAddress = @EmailAddress, 
 		@EmailAddressID = @EmailAddressID OUTPUT
