@@ -4,5 +4,5 @@ GO
 --TODO: Cambia el valor de @BusinessEntityID para ejecutar el procedimiento almacenado.
 DECLARE @BusinessEntityID INT = 0
 
-EXEC Person.uspGetPersonByBusinessEntityID 
+EXEC dbo.uspGetPersonByBusinessEntityID 
 	@BusinessEntityID = @BusinessEntityID

@@ -1,7 +1,7 @@
 USE AdventureWorks2019
 GO
 
-CREATE PROCEDURE Person.uspGetPersonByBusinessEntityID
+CREATE PROCEDURE dbo.uspGetPersonByBusinessEntityID
 @BusinessEntityID INT
 AS
 BEGIN
