@@ -1,7 +1,7 @@
 USE AdventureWorks2019
 GO
 
-CREATE PROCEDURE Person.uspUpdatePerson
+CREATE PROCEDURE dbo.uspUpdatePerson
 	@BusinessEntityID INT,
 	@Title VARCHAR(50),
 	@FirstName VARCHAR(50),

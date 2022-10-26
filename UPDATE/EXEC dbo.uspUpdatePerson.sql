@@ -14,7 +14,7 @@ SELECT * FROM Person.Person WHERE BusinessEntityID = @BusinessEntityID
 
 
 --Ejecutar el SP
-EXEC Person.uspUpdatePerson 
+EXEC dbo.uspUpdatePerson 
 	@BusinessEntityID = @BusinessEntityID,  
 	@Title = @Title, 
 	@FirstName = @FirstName, 
